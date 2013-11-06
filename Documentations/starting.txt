@@ -16,8 +16,12 @@ For source code editing / compiling /debugging
 I will recommand the use of code::blocks.
 
 Next Sage Weil recommanded me to focus my analist effort
-on libcephfs.h and fuseII.cc. Isolating their related files
+on those files:
+ceph/src/include/cephfs/libcephfs.h 
+ceph/src/libcephfs.cc
+and ceph/src/client/fuse_II.cc. Isolating their related files
 and dependent libraries will be our first goal.
+
 Once we are clear on what we need, we will then remove the fuse stack
 and try to compile with code::block sharing the Project file as it is built.
 On that stage nothing more than succeeding in compiling will be our goal.
