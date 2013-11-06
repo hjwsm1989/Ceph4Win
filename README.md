@@ -15,8 +15,13 @@ We will use as most possible cygwin, and opensource/libre dev tools.
 
 Why not using a third party gateway?
 
-Third party gateways like samba, ftp, s3 amazone, openstack inply their own level of complexity and some gateway technologies are
-not compatible for example s3 buckets can t be accessed by cephfs and data stored by cephfs is invisible by s3.
+Third party gateways like samba, ftp, webdav, s3 amazone, openstack imply their own level of complexity and some gateway technologies are
+not compatible for example s3 buckets can t be accessed by cephfs and data stored by cephfs is invisible by s3. Most of those 
+technologies client are commercial black box with surprising behavior.
+
+Best way to have something easy to deploy and use is to do a client for windows able to show ceph cluster as a regular 
+mapped network drive.
+
 
 
 How to participate? 
