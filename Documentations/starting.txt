@@ -1,0 +1,33 @@
+In our intent to write a ceph client for windows OS
+we will take in consideration those developement
+principles.
+
+First we will use free dev tools. It can be a pain 
+to set up they can have some problems but they are
+free and if noone use them and promote them they
+will never progress!
+
+Here are what I want to promote
+for dependent library for ceph like generaly
+GNU Lib C I recommand the use of Cygwin equivalent 
+as much as possible
+
+For source code editing / compiling /debugging 
+I will recommand the use of code::blocks.
+
+Next Sage Weil recommanded me to focus my analist effort
+on libcephfs.h and fuseII.cc. Isolating their related files
+and dependent libraries will be our first goal.
+Once we are clear on what we need, we will then remove the fuse stack
+and try to compile with code::block sharing the Project file as it is built.
+On that stage nothing more than succeeding in compiling will be our goal.
+
+Once we have the libcephfs.h backend compiling with code:block and cygwin
+
+We will seek how to interface the libcephfs routines with windows OS. 
+
+Finally a GUI setup will be written.
+
+We will have to focus on easyness to deploy. To begin with cygwin is not "easy" to understand and deploy. They try very hard to make a repository like system but you need to know what you want to get it... and well microsoft users are not well prepared for that world of awsome choice. They want to download a .exe that does the install job for them and then use the software they just installed.
+
+
